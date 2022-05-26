@@ -6,6 +6,8 @@
   If it is not, console log "Coding has its challenges."
 */
 
+const { execFileSync } = require("child_process");
+
 //CODE HERE
 let lovesCode = true;
 
@@ -65,6 +67,29 @@ let rain = true;
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
+
+if ( temperature >= 80 && rain) {
+  console.log('one should wear a t-shirt and take an umbrella')
+}
+else if ( temperature >= 60 && temperature <= 80 && rain) {
+  console.log('Wear a Jacket')}
+
+  else if ( temperature < 60 && rain || temperature < 60) {
+console.log('Advised to wear jacket and take an umbrella')
+  }
+  else if ( temperature <= 60 ) {
+    console.log(' Wear a dress')
+  }
+  else if ( temperature >= 80 === rain) {
+    console.log('wear a short dress')
+  }
+  else if ( temperature >= 60 === rain) {
+    console.log(' Wear a skirt')
+  }
+
+  else if ( temperature < 60 === rain ) {
+    console.log(' Wear long sleeve')
+  }
 //CODE HERE
 
 ////////// PROBLEM 5 //////////
@@ -74,12 +99,16 @@ let rain = true;
 */
 
 //CODE HERE
+for (let i = 1; i <= 10; i++) {
+  console.log('Hello');
+}
 
 ////////// PROBLEM 6 //////////
 
 /*
   Create a for-loop that runs 10 times, logging the numbers 1 through 10. Ex, on the first iteration it would log 1, on the second iteration it would log 2.
 */
+
 
 //CODE HERE
 
@@ -123,7 +152,8 @@ let passingScore = 7;
 
 ////////// PROBLEM 11 //////////
 
-let z = 5;
-// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
+// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.whi
 //CODE HERE
+
+ 
